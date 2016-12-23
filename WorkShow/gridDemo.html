@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+
+<body>
+<LINK href="css/decoration.css" type=text/css rel=stylesheet>
+<script src="js/options.js"></script>
+<script src="js/layout.js"></script>
+
+
+<div id="main">
+    <div id="left">
+        <ul>
+            <li class="show"><a  href="javascript:show(1);" class="tree">20161017</a>
+                <ul class="caidanlist1" style="display:none" id="caidan1">
+                    <li><a  href="javascript:show(2);" class="tree">金币 </a>
+                        <ul class="caidanlist2" style="display:none" id="caidan2">
+                            <li class="detail"><a href="javascript:showinfo('20161017','gold',0)">金币小于1000</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161017','gold',1)">金币[1000,10000)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161017','gold',2)">金币大于10000</a></li>
+                        </ul>
+                    <li><a  href="javascript:show(3);" class="tree">在线时长</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan3">
+                            <li class="detail"><a href="javascript:showinfo('20161017','onlinetime',0)"> 在线时长小于15分钟</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161017','onlinetime',1)"> 在线时长[15分钟,1小时)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161017','onlinetime',2)"> 在线时长大于1小时</a></li>
+                        </ul>
+                    </li>
+                    <li><a  href="javascript:show(4);" class="tree">经验值</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan4">
+                            <li class="detail"><a href="javascript:showinfo('20161017','score',0)"> 经验值小于10000</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161017','score',1)"> 经验值[10000,100000)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161017','score',2)"> 经验值大于100000</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                </ul>
+            </li>
+            <li class="show"><a  href="javascript:show(5);"class="tree" >20161018</a>
+                <ul class="caidanlist1" style="display:none" id="caidan5">
+                    <li><a  href="javascript:show(6);" class="tree">金币</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan6">
+                            <li class="detail"><a href="javascript:showinfo('20161018','gold',0)">金币小于1000</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161018','gold',1)">金币[1000,10000)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161018','gold',2)">金币大于10000</a></li>
+                        </ul>
+                    <li><a  href="javascript:show(7);" class="tree">在线时长</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan7">
+                            <li class="detail"><a href="javascript:showinfo('20161018','onlinetime',0)"> 在线时长小于15分钟</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161018','onlinetime',1)"> 在线时长[15分钟,1小时)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161018','onlinetime',2)"> 在线时长大于1小时</a></li>
+                        </ul>
+                    </li>
+                    <li><a  href="javascript:show(8);" class="tree" >经验值</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan8">
+                            <li class="detail"><a href="javascript:showinfo('20161018','score',0)"> 经验值小于10000</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161018','score',1)"> 经验值[10000,100000)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161018','score',2)"> 经验值大于100000</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                </ul>
+            </li>
+            <li class="show"><a  href="javascript:show(9);" class="tree">20161019</a>
+                <ul class="caidanlist1" style="display:none" id="caidan9">
+                    <li><a  href="javascript:show(10);" class="tree">金币</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan10">
+                            <li class="detail"><a href="javascript:showinfo('20161019','gold',0)">金币小于1000</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161019','gold',1)">金币[1000,10000)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161019','gold',2)">金币大于10000</a></li>
+                        </ul>
+                    <li><a  href="javascript:show(11);" class="tree">在线时长</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan11">
+                            <li class="detail"><a href="javascript:showinfo('20161019','onlinetime',0)"> 在线时长小于15分钟</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161019','onlinetime',1)"> 在线时长[15分钟,1小时)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161019','onlinetime',2)"> 在线时长大于1小时</a></li>
+                        </ul>
+                    </li>
+                    <li><a  href="javascript:show(12);" class="tree" >经验值</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan12">
+                            <li  class="detail"><a href="javascript:showinfo('20161019','score',0)"> 经验值小于10000</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161019','score',1)"> 经验值[10000,100000)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161019','score',2)"> 经验值大于100000</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                </ul>
+            </li>
+            <li class="show"><a  href="javascript:show(13);" class="tree">20161020</a>
+                <ul class="caidanlist1" style="display:none" id="caidan13">
+                    <li><a  href="javascript:show(14);" class="tree">金币</a>
+                        <ul class="caidanlist1" style="display:none" id="caidan14">
+                            <li class="detail"><a href="javascript:showinfo('20161020','gold',0)">金币小于1000</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161020','gold',1)">金币[1000,10000)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161020','gold',2)">金币大于10000</a></li>
+                        </ul>
+                    <li><a  href="javascript:show(15);" class="tree">在线时长</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan15">
+                            <li class="detail"><a href="javascript:showinfo('20161020','onlinetime',0)"> 在线时长小于15分钟</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161020','onlinetime',1)"> 在线时长[15分钟,1小时)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161020','onlinetime',2)"> 在线时长大于1小时</a></li>
+                        </ul>
+                    </li>
+                    <li><a  href="javascript:show(16);" class="tree">经验值</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan16">
+                            <li class="detail"><a href="javascript:showinfo('20161020','score',0)"> 经验值小于10000</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161020','score',1)"> 经验值[10000,100000)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161020','score',2)"> 经验值大于100000</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                </ul>
+            </li>
+            <li class="show"><a  href="javascript:show(17);" class="tree">20161021</a>
+                <ul class="caidanlist1" style="display:none" id="caidan17">
+                    <li><a  href="javascript:show(18);" class="tree">金币</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan18">
+                            <li class="detail"><a href="javascript:showinfo('20161021','gold',0)">金币小于1000</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161021','gold',1)">金币[1000,10000)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161021','gold',2)">金币大于10000</a></li>
+                        </ul>
+                    <li><a  href="javascript:show(19);" class="tree">在线时长</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan19">
+                            <li class="detail"><a href="javascript:showinfo('20161021','onlinetime',0)"> 在线时长小于15分钟</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161021','onlinetime',1)"> 在线时长[15分钟,1小时)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161021','onlinetime',2)"> 在线时长大于1小时</a></li>
+                        </ul>
+                    </li>
+                    <li><a  href="javascript:show(20);" class="tree">经验值</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan20">
+                            <li class="detail"><a href="javascript:showinfo('20161021','score',0)"> 经验值小于10000</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161021','score',1)"> 经验值[10000,100000)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161021','score',2)"> 经验值大于100000</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                </ul>
+            </li>
+            <li class="show"><a  href="javascript:show(21);" class="tree">20161022</a>
+                <ul class="caidanlist1" style="display:none" id="caidan21">
+                    <li><a  href="javascript:show(22);" class="tree">金币</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan22">
+                            <li class="detail"><a href="javascript:showinfo('20161022','gold',0)">金币小于1000</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161022','gold',1)">金币[1000,10000)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161022','gold',2)">金币大于10000</a></li>
+                        </ul>
+                    <li><a  href="javascript:show(23);" class="tree">在线时长</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan23">
+                            <li class="detail"><a href="javascript:showinfo('20161022','onlinetime',0)"> 在线时长小于15分钟</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161022','onlinetime',1)"> 在线时长[15分钟,1小时)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161022','onlinetime',2)"> 在线时长大于1小时</a></li>
+                        </ul>
+                    </li>
+                    <li><a  href="javascript:show(24);" class="tree">经验值</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan24">
+                            <li class="detail"><a href="javascript:showinfo('20161022','score',0)"> 经验值小于10000</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161022','score',1)"> 经验值[10000,100000)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161022','score',2)"> 经验值大于100000</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                </ul>
+            </li>
+            <li class="show"> <a  href="javascript:show(25);" class="tree">20161023</a>
+                <ul class="caidanlist1" style="display:none" id="caidan25">
+                    <li><a  href="javascript:show(26);" class="tree">金币</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan26">
+                            <li class="detail"><a href="javascript:showinfo('20161023','gold',0)">金币小于1000</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161023','gold',1)">金币[1000,10000)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161023','gold',2)">金币大于10000</a></li>
+                        </ul>
+                    <li><a  href="javascript:show(27);" class="tree">在线时长</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan27">
+                            <li class="detail"><a href="javascript:showinfo('20161023','onlinetime',0)"> 在线时长小于15分钟</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161023','onlinetime',1)"> 在线时长[15分钟,1小时)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161023','onlinetime',2)"> 在线时长大于1小时</a></li>
+                        </ul>
+                    </li>
+                    <li><a  href="javascript:show(28);"class="tree" >经验值</a>
+                        <ul class="caidanlist2" style="display:none" id="caidan28">
+                            <li class="detail"><a href="javascript:showinfo('20161023','score',0)"> 经验值小于10000</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161023','score',1)"> 经验值[10000,100000)</a></li>
+                            <li class="detail"><a href="javascript:showinfo('20161023','score',2)"> 经验值大于100000</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+    <div id="container"></div>
+</div>
+</body>
+</html>

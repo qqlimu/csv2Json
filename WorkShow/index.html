@@ -1,0 +1,395 @@
+<!DOCTYPE HTML >
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+    <TITLE>gridShow</TITLE>
+    <META http-equiv=Content-Type content="text/html; charset=gb2312">
+    <META http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+
+    <LINK href="css/update8.css" type=text/css rel=stylesheet>
+    <script src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+    <script src="js/options.js"></script>
+</HEAD>
+<BODY>
+
+
+
+<DIV class=pnav-cnt>
+    <DIV class=pnav-box id=letter-a>
+        <DIV class=box-title>
+            <A class="btn-fold " href="#"></A>
+            <A class="btn-unfold hidden" href="#"></A><SPAN class=pnav-letter>20161017</SPAN></DIV>
+        <UL class="box-list hidden">
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" ></A><B><A
+                    target=NT_PHVIEW>金币</A> </B>
+                <H2 class=hidden>
+                    <A href="javascript:showinfo('20161017','gold')">金币小于1000</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币[1000,1000)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币大于10000</A></H2>
+
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>在线时长</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长小于15分钟</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长[15分钟，60分钟)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长大于1小时</A></H2>
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>经验值</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值小于10,000</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值[10,000;100,000)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值大于100,000</A></H2>
+        </UL>
+    </DIV>
+    <DIV class=pnav-box id=letter-b>
+        <DIV class=box-title><A class="btn-fold "
+                                href="#"></A><A class="btn-unfold hidden"
+                                                href="#"></A><SPAN
+                class=pnav-letter>20161018</SPAN></DIV>
+        <UL class="box-list hidden">
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>金币</A> </B>
+                <H2 class=hidden><A
+                        href="javascript:showinfo('20161017')"
+                        target=NT_PHVIEW>金币小于1000</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币[1000,1000)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币大于10000</A></H2>
+
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>在线时长</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长小于15分钟</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长[15分钟，60分钟)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长大于1小时</A></H2>
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>经验值</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值小于10,000</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值[10,000;100,000)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值大于100,000</A></H2>
+        </UL>
+    </DIV>
+    <DIV class=pnav-box id=letter-c>
+        <DIV class=box-title><A class="btn-fold " href="#"></A><A class="btn-unfold hidden"
+                                                                  href="#"></A><SPAN class=pnav-letter>20161019</SPAN><SPAN
+                class=cDGray></SPAN></DIV>
+        <UL class="box-list hidden">
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="javascript:showinfo('20161017')"
+                    target=NT_PHVIEW>金币</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币小于1000</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币[1000,1000)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币大于10000</A></H2>
+
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>在线时长</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长小于15分钟</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长[15分钟，60分钟)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长大于1小时</A></H2>
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>经验值</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值小于10,000</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值[10,000;100,000)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值大于100,000</A></H2>
+        </UL>
+    </DIV>
+    <DIV class=pnav-box id=letter-d>
+        <DIV class=box-title><A class="btn-fold " href="#"></A><A class="btn-unfold hidden"
+                                                                  href="#"></A><SPAN class=pnav-letter>20161020</SPAN><SPAN
+                class=cDGray></SPAN></DIV>
+        <UL class="box-list hidden">
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>金币</A> </B>
+                <H2 class=hidden><A
+                        href="javascript:showinfo('20161017')"
+                        target=NT_PHVIEW>金币小于1000</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币[1000,1000)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币大于10000</A></H2>
+
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>在线时长</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长小于15分钟</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长[15分钟，60分钟)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长大于1小时</A></H2>
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>经验值</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值小于10,000</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值[10,000;100,000)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值大于100,000</A></H2>
+        </UL>
+    </DIV>
+    <DIV class=pnav-box id=letter-e>
+        <DIV class=box-title><A class="btn-fold " href="#"></A><A class="btn-unfold hidden"
+                                                                  href="#"></A><SPAN class=pnav-letter>20161021</SPAN><SPAN
+                class=cDGray></SPAN></DIV>
+        <UL class="box-list hidden">
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>金币</A> </B>
+                <H2 class=hidden><A
+                        href="javascript:showinfo('20161017')"
+                        >金币小于1000</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币[1000,1000)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币大于10000</A></H2>
+
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>在线时长</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长小于15分钟</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长[15分钟，60分钟)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长大于1小时</A></H2>
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>经验值</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值小于10,000</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值[10,000;100,000)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值大于100,000</A></H2>
+        </UL>
+    </DIV>
+    <DIV class=pnav-box id=letter-f>
+        <DIV class=box-title><A class="btn-fold " href="#"></A><A class="btn-unfold hidden"
+                                                                  href="#"></A><SPAN class=pnav-letter>20161022</SPAN><SPAN
+                class=cDGray></SPAN></DIV>
+        <UL class="box-list hidden">
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>金币</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币小于1000</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币[1000,1000)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币大于10000</A></H2>
+
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>在线时长</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长小于15分钟</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长[15分钟，60分钟)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长大于1小时</A></H2>
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>经验值</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值小于10,000</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值[10,000;100,000)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值大于100,000</A></H2>
+        </UL>
+    </DIV>
+    <DIV class=pnav-box id=letter-g>
+        <DIV class=box-title><A class="btn-fold " href="#"></A><A class="btn-unfold hidden"
+                                                                  href="#"></A><SPAN class=pnav-letter>20161023</SPAN><SPAN
+                class=cDGray></SPAN></DIV>
+        <UL class="box-list hidden">
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>金币</A> </B>
+                <H2 class=hidden><A
+                        href="javascript:showinfo('20161017')"
+                        target=NT_PHVIEW>金币小于1000</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币[1000,1000)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>金币大于10000</A></H2>
+
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>在线时长</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长小于15分钟</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长[15分钟，60分钟)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>在线时长大于1小时</A></H2>
+            <LI><A class=btn-fold href="#"></A><A
+                    class="btn-unfold hidden" href="#"></A><B><A
+                    href="#"
+                    target=NT_PHVIEW>经验值</A> </B>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值小于10,000</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值[10,000;100,000)</A></H2>
+                <H2 class=hidden><A
+                        href="#"
+                        target=NT_PHVIEW>经验值大于100,000</A></H2>
+        </UL>
+    </DIV>
+
+
+    <SCRIPT src="js/update8.js" type=text/javascript></SCRIPT>
+
+    <SCRIPT type=text/javascript>
+        //<![CDATA[
+        (function () {
+            NTES("span.photo-search input[type=text]").addEvent("focus", function () {
+                this.value == this.defaultValue && (this.value = "");
+            }).addEvent("blur", function () {
+                this.value == "" && (this.value = this.defaultValue);
+            });
+            NTES("div.pnav-box div.box-title a.btn-fold").addEvent("click", function (e) {
+                e.preventDefault();
+                var eleTitle = NTES(this.parentNode);
+                NTES(this).addCss("hidden");
+                eleTitle.$("a.btn-unfold").removeCss("hidden");
+                NTES(eleTitle.parentNode).$("ul.box-list").removeCss("hidden");
+            });
+            NTES("div.pnav-box div.box-title a.btn-unfold").addEvent("click", function (e) {
+                e.preventDefault();
+                var eleTitle = NTES(this.parentNode);
+                NTES(this).addCss("hidden");
+                eleTitle.$("a.btn-fold").removeCss("hidden");
+                NTES(eleTitle.parentNode).$("ul.box-list").addCss("hidden");
+            });
+            NTES("div.pnav-box ul.box-list a.btn-fold").addEvent("click", function (e) {
+                e.preventDefault();
+                var eleTitle = NTES(this.parentNode);
+                NTES(this).addCss("hidden");
+                eleTitle.$("a.btn-unfold").removeCss("hidden");
+                eleTitle.$("h2").removeCss("hidden");
+            });
+            NTES("div.pnav-box ul.box-list a.btn-unfold").addEvent("click", function (e) {
+                e.preventDefault();
+                var eleTitle = NTES(this.parentNode);
+                NTES(this).addCss("hidden");
+                eleTitle.$("a.btn-fold").removeCss("hidden");
+                eleTitle.$("h2").addCss("hidden");
+            });
+            new NTES.ui.Slide(NTES("ul.photo-snav li"), NTES("div.photo-scnt"), "active", "mouseover", 6000);
+        })();
+        //]]>
+    </SCRIPT>
+
+
+</DIV>
+
+</BODY>
+</HTML>
